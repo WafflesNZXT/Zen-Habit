@@ -1,40 +1,40 @@
-# 🧘 Zen Habit - Daily Micro Challenges
+#  Zen Habit - Daily Micro Challenges
 
 A mindfulness-focused web application that provides users with daily micro-challenges to cultivate inner peace, build better habits, and improve overall well-being through mindful living.
 
 ## ✨ Features
 
-### 🧘 **Mindful Authentication**
+###  **Mindful Authentication**
 - **Sign Up & Login**: Secure user registration with a focus on beginning your mindful journey
 - **Session Management**: Persistent login sessions with local storage
 - **Password Validation**: Real-time password strength checking with gentle guidance
 - **User Profiles**: Personal profile management for your mindfulness practice
 
-### 🌱 **Daily Mindful Challenges**
+###  **Daily Mindful Challenges**
 - **35+ Unique Challenges**: Diverse mindfulness tasks across multiple categories
 - **Daily Rotation**: New challenge every day based on intelligent date algorithm
 - **Mindful Categories**: 
-  - 🧘 **Mental**: Meditation, breathing exercises, mindfulness practices
-  - 💧 **Wellness**: Hydration, nutrition, self-care rituals
-  - 🤸 **Physical**: Gentle movement, stretching, body awareness
-  - 👥 **Social**: Compassionate communication, gratitude, kindness
-  - 📋 **Productivity**: Mindful organization, intentional planning, digital wellness
+  -  **Mental**: Meditation, breathing exercises, mindfulness practices
+  -  **Wellness**: Hydration, nutrition, self-care rituals
+  -  **Physical**: Gentle movement, stretching, body awareness
+  -  **Social**: Compassionate communication, gratitude, kindness
+  -  **Productivity**: Mindful organization, intentional planning, digital wellness
 
-### 📊 **Progress Tracking**
+###  **Progress Tracking**
 - **Mindful Streak Counter**: Track consecutive days of mindful practice
 - **Completion Statistics**: Total challenges completed on your journey
 - **Weekly Calendar**: Visual progress indicator showing your mindful moments
 - **Challenge History**: Reflect on past challenges and growth
 - **Compassionate Skip Option**: Ability to skip challenges without judgment
 
-### 🎨 **Serene User Experience**
+###  **Serene User Experience**
 - **Responsive Design**: Seamless experience across all devices
 - **Zen-Inspired UI**: Calming gradient backgrounds with peaceful aesthetics
 - **Smooth Animations**: Gentle transitions that promote tranquility
 - **Mindful Typography**: Clean, readable fonts that reduce visual stress
 - **Intuitive Navigation**: Effortless movement between mindful spaces
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
@@ -53,7 +53,7 @@ A mindfulness-focused web application that provides users with daily micro-chall
 4. **Track Growth**: View your streak and mindful journey progress
 5. **Build Habits**: Consistency in small moments creates lasting transformation
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ### Frontend Technologies
 - **HTML5**: Semantic markup focused on accessibility and mindful structure
@@ -63,31 +63,31 @@ A mindfulness-focused web application that provides users with daily micro-chall
 
 ### Key Components
 
-#### 🧘 **Challenge System** (`js/challenges.js`)
+####  **Challenge System** (`js/challenges.js`)
 - **ChallengeManager**: Loads and manages the mindful challenge database
 - **Daily Algorithm**: Deterministic challenge selection ensuring variety
 - **Category Filtering**: Organize challenges by mindfulness type and difficulty
 - **Search Functionality**: Find specific challenges for focused practice
 
-#### 🔐 **Authentication** (`js/auth.js`)
+####  **Authentication** (`js/auth.js`)
 - **AuthManager**: Complete user management with mindful messaging
 - **Password Security**: Basic hashing with strength validation
 - **Session Handling**: Persistent login state for continuous practice
 - **Profile Management**: User preferences and mindful customization
 
-#### 📈 **Progress Tracking** (`js/challenges.js`)
+####  **Progress Tracking** (`js/challenges.js`)
 - **ProgressTracker**: Comprehensive mindful progress monitoring
 - **Streak Calculation**: Encouraging streak counting with compassionate resets
 - **Data Persistence**: Local storage for private progress tracking
 - **Statistics**: Meaningful metrics for mindful growth
 
-#### 🎮 **Main Application** (`js/app.js`)
+####  **Main Application** (`js/app.js`)
 - **ZenHabitApp**: Central application controller with mindful UX
 - **UI Management**: Smooth view transitions and peaceful interactions
 - **Event Handling**: Gentle user interaction management
 - **State Management**: Harmonious application state coordination
 
-### 📁 Project Structure
+###  Project Structure
 ```
 zen-habit/
 ├── index.html              # Main application page
