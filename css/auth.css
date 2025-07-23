@@ -17,6 +17,14 @@
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+.main-logo {
+    width: 160px;
+    height: 135px;
+    border-radius: 40px;
+    position: absolute;
+    top: -10px;
+    left: -225px;
+}
 
 .auth-form h2 {
     text-align: center;

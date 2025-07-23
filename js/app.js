@@ -101,7 +101,7 @@ class ZenHabitApp {
         const name = authManager.getCurrentUser().name.split(' ')[0]; // First name only
         
         if (hour < 12) {
-            return `Good morning, ${name}! 🌅`;
+            return `Good morning, ${name}!`;
         } else if (hour < 17) {
             return `Good afternoon, ${name}! ☀️`;
         } else {

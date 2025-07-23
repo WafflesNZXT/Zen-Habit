@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     min-height: 100vh;
@@ -111,6 +111,7 @@ body {
 .logo {
     font-size: 28px;
     font-weight: 700;
+    margin-left: 10px;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
