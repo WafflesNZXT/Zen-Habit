@@ -103,9 +103,9 @@ class ZenHabitApp {
         if (hour < 12) {
             return `Good morning, ${name}!`;
         } else if (hour < 17) {
-            return `Good afternoon, ${name}! ☀️`;
+            return `Good afternoon, ${name}!`;
         } else {
-            return `Good evening, ${name}! 🌙`;
+            return `Good evening, ${name}!`;
         }
     }
 
@@ -221,7 +221,7 @@ class ZenHabitApp {
             statusDiv.innerHTML = `
                 <div class="status-complete">
                     <span class="status-icon">✨</span>
-                    <span>Mindful moment completed! You're cultivating inner peace! 🧘</span>
+                    <span>Mindful moment completed! You're cultivating inner peace!</span>
                 </div>
             `;
         } else if (isSkipped) {
@@ -252,9 +252,9 @@ class ZenHabitApp {
             }
             
             if (currentStreak === 7) {
-                message += ' One week of mindfulness - amazing! 🌟';
+                message += ' One week of mindfulness - amazing!';
             } else if (currentStreak === 30) {
-                message += ' 30 days of mindful living - incredible dedication! 🏆';
+                message += ' 30 days of mindful living - incredible dedication!';
             }
             
             this.showSuccess(message);
@@ -281,7 +281,7 @@ class ZenHabitApp {
     skipChallenge() {
         if (confirm('Are you sure you want to skip today\'s mindful challenge? Remember, every small step counts on your journey to inner peace.')) {
             if (progressTracker.skipToday()) {
-                this.showSuccess('Challenge skipped with compassion. Tomorrow is a new opportunity for mindfulness! 🌅');
+                this.showSuccess('Challenge skipped with compassion. Tomorrow is a new opportunity for mindfulness!');
                 this.loadDashboard(); // Refresh dashboard
             } else {
                 this.showError('Today\'s challenge has already been completed or skipped!');
@@ -323,7 +323,7 @@ class ZenHabitApp {
                 </div>
                 <div class="recent-challenge-status ${item.progress?.status || 'pending'}">
                     ${item.progress?.status === 'completed' ? '✨ Completed' : 
-                      item.progress?.status === 'skipped' ? '🌅 Skipped' : 
+                      item.progress?.status === 'skipped' ? 'Skipped' : 
                       item.isToday ? '🧘 Today' : '⚪ Missed'}
                 </div>
             </div>
