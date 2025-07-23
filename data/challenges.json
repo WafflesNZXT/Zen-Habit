@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "title": "Drink a glass of water mindfully",
+    "description": "Hydrate your body with intention. Feel the water's temperature, taste, and notice how it nourishes you.",
+    "category": "wellness",
+    "icon": "💧",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "title": "Practice mindful breathing for 2 minutes",
+    "description": "Find a quiet space and focus on your breath. Inhale slowly for 4 counts, hold for 4, then exhale for 6.",
+    "category": "mental",
+    "icon": "🌬️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "title": "Send a message of gratitude",
+    "description": "Reach out to someone who has positively impacted your life. Express genuine appreciation for their presence.",
+    "category": "social",
+    "icon": "🙏",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "title": "Take 10 conscious breaths",
+    "description": "Pause whatever you're doing and take 10 deep, intentional breaths. Notice the sensation of air entering and leaving your body.",
+    "category": "mental",
+    "icon": "🧘",
+    "difficulty": "easy"
+  },
+  {
+    "id": 5,
+    "title": "Observe nature for 3 minutes",
+    "description": "Step outside or look through a window. Observe the natural world without judgment - clouds, trees, birds, or sky.",
+    "category": "mental",
+    "icon": "🌳",
+    "difficulty": "easy"
+  },
+  {
+    "id": 6,
+    "title": "Write down three things you're grateful for",
+    "description": "Take a moment to reflect and write down three specific things that brought you joy or peace today.",
+    "category": "mental",
+    "icon": "📝",
+    "difficulty": "easy"
+  },
+  {
+    "id": 7,
+    "title": "Do 10 mindful movements",
+    "description": "Whether it's stretches, jumping jacks, or yoga poses - move your body with full awareness and intention.",
+    "category": "physical",
+    "icon": "🤸",
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "title": "Organize one small space mindfully",
+    "description": "Choose a drawer, desk corner, or shelf. Clean it with full attention, appreciating the process of creating order.",
+    "category": "productivity",
+    "icon": "🗂️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 9,
+    "title": "Practice loving-kindness meditation",
+    "description": "Spend 2 minutes sending loving thoughts to yourself, then to someone you love, and finally to someone you find challenging.",
+    "category": "mental",
+    "icon": "💝",
+    "difficulty": "medium"
+  },
+  {
+    "id": 10,
+    "title": "Listen to calming music mindfully",
+    "description": "Choose a peaceful song and listen with complete attention. Notice the instruments, melody, and how it makes you feel.",
+    "category": "wellness",
+    "icon": "🎵",
+    "difficulty": "easy"
+  },
+  {
+    "id": 11,
+    "title": "Practice mindful eating",
+    "description": "Eat something small (fruit, nuts, tea) with complete attention. Notice texture, flavor, and the nourishment it provides.",
+    "category": "wellness",
+    "icon": "🍎",
+    "difficulty": "easy"
+  },
+  {
+    "id": 12,
+    "title": "Journal your current emotions",
+    "description": "Write down how you're feeling right now without judgment. Acknowledge your emotions with compassion.",
+    "category": "mental",
+    "icon": "📔",
+    "difficulty": "easy"
+  },
+  {
+    "id": 13,
+    "title": "Offer a genuine compliment",
+    "description": "Give someone a heartfelt compliment. Notice how it feels to spread positivity and kindness.",
+    "category": "social",
+    "icon": "💫",
+    "difficulty": "medium"
+  },
+  {
+    "id": 14,
+    "title": "Take a mindful walk",
+    "description": "Walk slowly for 5 minutes, focusing on each step. Feel your feet connecting with the ground beneath you.",
+    "category": "physical",
+    "icon": "🚶",
+    "difficulty": "easy"
+  },
+  {
+    "id": 15,
+    "title": "Practice digital mindfulness",
+    "description": "Before checking your phone or computer, pause and set an intention for how you want to engage with technology.",
+    "category": "productivity",
+    "icon": "📱",
+    "difficulty": "easy"
+  },
+  {
+    "id": 16,
+    "title": "Perform a body scan meditation",
+    "description": "Lie down and mentally scan your body from head to toe, noticing any tension and sending breath to those areas.",
+    "category": "physical",
+    "icon": "🧘‍♀️",
+    "difficulty": "medium"
+  },
+  {
+    "id": 17,
+    "title": "Express gratitude to yourself",
+    "description": "Thank yourself for something you did well today, no matter how small. Practice self-compassion and appreciation.",
+    "category": "mental",
+    "icon": "🤗",
+    "difficulty": "easy"
+  },
+  {
+    "id": 18,
+    "title": "Practice mindful posture",
+    "description": "Spend 2 minutes sitting or standing with perfect posture, feeling your spine aligned and your body balanced.",
+    "category": "physical",
+    "icon": "🧍",
+    "difficulty": "easy"
+  },
+  {
+    "id": 19,
+    "title": "Read something inspiring",
+    "description": "Read a page from a book, poem, or article that uplifts your spirit. Let the words resonate within you.",
+    "category": "mental",
+    "icon": "📚",
+    "difficulty": "easy"
+  },
+  {
+    "id": 20,
+    "title": "Capture a moment of beauty",
+    "description": "Take a photo of something beautiful around you. Pause to really see and appreciate this moment.",
+    "category": "mental",
+    "icon": "📸",
+    "difficulty": "easy"
+  },
+  {
+    "id": 21,
+    "title": "Practice mindful hand washing",
+    "description": "Turn a routine task into meditation. Feel the water temperature, soap texture, and the cleansing process.",
+    "category": "wellness",
+    "icon": "🧼",
+    "difficulty": "easy"
+  },
+  {
+    "id": 22,
+    "title": "Do gentle stretches",
+    "description": "Perform 5 gentle stretches, focusing on areas that feel tense. Breathe into each stretch with awareness.",
+    "category": "physical",
+    "icon": "🤸‍♀️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 23,
+    "title": "Practice digital decluttering",
+    "description": "Mindfully delete 5 unnecessary files, photos, or apps. Create space in your digital environment.",
+    "category": "productivity",
+    "icon": "🗑️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 24,
+    "title": "Meditate on your breath",
+    "description": "Sit quietly for 3 minutes focusing only on your natural breathing rhythm. When your mind wanders, gently return to breath.",
+    "category": "mental",
+    "icon": "🌸",
+    "difficulty": "medium"
+  },
+  {
+    "id": 25,
+    "title": "Set a mindful intention",
+    "description": "Write down one positive intention for tomorrow. Visualize yourself embodying this intention throughout the day.",
+    "category": "productivity",
+    "icon": "🎯",
+    "difficulty": "easy"
+  },
+  {
+    "id": 26,
+    "title": "Create something with awareness",
+    "description": "Spend 3 minutes creating - draw, write, hum, or craft something while being fully present in the creative process.",
+    "category": "mental",
+    "icon": "🎨",
+    "difficulty": "easy"
+  },
+  {
+    "id": 27,
+    "title": "Practice emotional awareness",
+    "description": "Check in with your emotional state. Name what you're feeling without trying to change it, just acknowledge with kindness.",
+    "category": "mental",
+    "icon": "❤️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 28,
+    "title": "Make your bed mindfully",
+    "description": "If not done already, make your bed with complete attention. Appreciate creating a peaceful, ordered space.",
+    "category": "productivity",
+    "icon": "🛏️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 29,
+    "title": "Send loving energy to someone",
+    "description": "Think of someone who needs support and mentally send them love, peace, and positive energy for 2 minutes.",
+    "category": "social",
+    "icon": "💌",
+    "difficulty": "medium"
+  },
+  {
+    "id": 30,
+    "title": "Connect with sunlight",
+    "description": "Step outside or sit by a window for 2 minutes. Feel the warmth of sunlight on your skin and appreciate this natural energy.",
+    "category": "wellness",
+    "icon": "☀️",
+    "difficulty": "easy"
+  },
+  {
+    "id": 31,
+    "title": "Practice mindful tea or coffee drinking",
+    "description": "Prepare and drink your beverage with full attention. Notice the aroma, warmth, and how it affects your body.",
+    "category": "wellness",
+    "icon": "🍵",
+    "difficulty": "easy"
+  },
+  {
+    "id": 32,
+    "title": "Perform a random act of kindness",
+    "description": "Do something kind for someone without expecting anything in return. Notice how giving feels in your heart.",
+    "category": "social",
+    "icon": "🌟",
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "title": "Practice mindful listening",
+    "description": "When someone speaks to you today, listen with complete presence. Don't plan your response, just truly hear them.",
+    "category": "social",
+    "icon": "👂",
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "title": "Appreciate your reflection",
+    "description": "Look in a mirror and offer yourself a genuine smile and kind words. Practice self-love and acceptance.",
+    "category": "mental",
+    "icon": "🪞",
+    "difficulty": "easy"
+  },
+  {
+    "id": 35,
+    "title": "Practice walking meditation",
+    "description": "Walk very slowly for 3 minutes, coordinating each step with your breath. Feel completely present in movement.",
+    "category": "physical",
+    "icon": "👣",
+    "difficulty": "medium"
+  }
+]
+

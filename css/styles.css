@@ -1,0 +1,578 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.btn-outline:hover {
+    background: #667eea;
+    color: white;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 20px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    gap: 12px;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
+.hero h2 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 56px;
+    margin-bottom: 24px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.feature p {
+    opacity: 0.9;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 40px;
+    margin: 20px 0;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.user-welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user-welcome h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1f2937;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Challenge Card */
+.challenge-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    margin-bottom: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.challenge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.challenge-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.challenge-date {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.challenge-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.challenge-icon {
+    font-size: 56px;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-text h4 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.challenge-text p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.challenge-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.challenge-status {
+    margin-top: 24px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border-radius: 12px;
+    border-left: 4px solid #10b981;
+}
+
+.status-complete {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #065f46;
+    font-weight: 500;
+}
+
+.status-icon {
+    font-size: 20px;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+/* Progress Section */
+.progress-section {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 40px;
+    margin: 20px 0;
+    color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.progress-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.progress-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.progress-card {
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.progress-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1f2937;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.day-cell {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    background: #f9fafb;
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.day-cell.completed {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    transform: scale(1.1);
+}
+
+.day-cell.today {
+    border: 2px solid #667eea;
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.recent-challenges {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recent-challenge {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.recent-challenge:hover {
+    background: #f3f4f6;
+}
+
+.recent-challenge-icon {
+    font-size: 24px;
+}
+
+.recent-challenge-text {
+    flex: 1;
+}
+
+.recent-challenge-title {
+    font-weight: 500;
+    color: #1f2937;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.recent-challenge-date {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.recent-challenge-status {
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.recent-challenge-status.completed {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+.recent-challenge-status.skipped {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 24px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .hero h2 {
+        font-size: 40px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .user-stats {
+        gap: 40px;
+    }
+    
+    .challenge-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .challenge-actions {
+        flex-direction: column;
+    }
+    
+    .dashboard-actions {
+        flex-direction: column;
+    }
+    
+    .progress-header {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    
+    .progress-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-section,
+    .progress-section {
+        padding: 24px;
+        margin: 16px 0;
+    }
+    
+    .challenge-card {
+        padding: 24px;
+    }
+    
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .user-welcome h2 {
+        font-size: 28px;
+    }
+    
+    .user-stats {
+        gap: 24px;
+    }
+    
+    .stat-number {
+        font-size: 32px;
+    }
+}
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Habit - Daily Micro Challenges</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">🧘 Zen Habit</h1>
+            <nav class="nav" id="nav">
+                <button class="btn btn-primary" id="loginBtn">Login</button>
+                <button class="btn btn-secondary" id="signupBtn">Sign Up</button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!-- Welcome Section (shown when not logged in) -->
+            <section class="welcome-section" id="welcomeSection">
+                <div class="hero">
+                    <h2>Transform Your Life, One Mindful Moment at a Time</h2>
+                    <p>Join thousands of people building better habits through daily micro-challenges. Each day brings a new, simple task designed to boost your wellness, mindfulness, and inner peace.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-large" id="getStartedBtn">Begin Your Journey</button>
+                        <button class="btn btn-outline" id="learnMoreBtn">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🧘</div>
+                        <h3>Mindful Living</h3>
+                        <p>Simple wellness and mindfulness practices that fit into any schedule</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Daily Growth</h3>
+                        <p>New challenges every day to nurture your mind, body, and spirit</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📈</div>
+                        <h3>Track Progress</h3>
+                        <p>Build streaks and watch your mindful habits flourish over time</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Auth Forms -->
+            <section class="auth-section hidden" id="authSection">
+                <!-- Login Form -->
+                <div class="auth-form" id="loginForm">
+                    <h2>Welcome Back</h2>
+                    <form id="loginFormElement">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Login</button>
+                    </form>
+                    <p class="auth-switch">New to Zen Habit? <a href="#" id="showSignupForm">Join us</a></p>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="auth-form hidden" id="signupForm">
+                    <h2>Begin Your Journey</h2>
+                    <form id="signupFormElement">
+                        <div class="form-group">
+                            <label for="signupName">Full Name</label>
+                            <input type="text" id="signupName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email</label>
+                            <input type="email" id="signupEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" id="signupPassword" required minlength="6">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Start My Journey</button>
+                    </form>
+                    <p class="auth-switch">Already have an account? <a href="#" id="showLoginForm">Sign in</a></p>
+                </div>
+            </section>
+
+            <!-- Dashboard (shown when logged in) -->
+            <section class="dashboard-section hidden" id="dashboardSection">
+                <div class="user-welcome">
+                    <h2>Welcome back, <span id="userName"></span>!</h2>
+                    <div class="user-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="currentStreak">0</span>
+                            <span class="stat-label">Day Streak</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="totalCompleted">0</span>
+                            <span class="stat-label">Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-card" id="challengeCard">
+                    <div class="challenge-header">
+                        <h3>Today's Mindful Challenge</h3>
+                        <span class="challenge-date" id="challengeDate"></span>
+                    </div>
+                    <div class="challenge-content">
+                        <div class="challenge-icon" id="challengeIcon">🧘</div>
+                        <div class="challenge-text">
+                            <h4 id="challengeTitle">Loading your challenge...</h4>
+                            <p id="challengeDescription">Please wait while we prepare your daily mindful moment.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-actions">
+                        <button class="btn btn-success btn-full" id="completeBtn">Mark as Complete</button>
+                        <button class="btn btn-outline" id="skipBtn">Skip Today</button>
+                    </div>
+                    <div class="challenge-status hidden" id="challengeStatus">
+                        <div class="status-complete">
+                            <span class="status-icon">✅</span>
+                            <span>Challenge completed! Wonderful mindfulness!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-actions">
+                    <button class="btn btn-outline" id="viewProgressBtn">View Progress</button>
+                    <button class="btn btn-outline" id="logoutBtn">Logout</button>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section hidden" id="progressSection">
+                <div class="progress-header">
+                    <h2>Your Mindful Journey</h2>
+                    <button class="btn btn-outline" id="backToDashboardBtn">Back to Dashboard</button>
+                </div>
+                <div class="progress-stats">
+                    <div class="progress-card">
+                        <h3>This Week</h3>
+                        <div class="week-grid" id="weekGrid"></div>
+                    </div>
+                    <div class="progress-card">
+                        <h3>Recent Challenges</h3>
+                        <div class="recent-challenges" id="recentChallenges"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Zen Habit. Cultivating mindfulness, one moment at a time.</p>
+        </footer>
+    </div>
+
+    <script src="js/challenges.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
