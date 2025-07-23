@@ -64,14 +64,20 @@ class ZenHabitApp {
         if (authManager.isLoggedIn()) {
             const greeting = this.getTimeBasedGreeting();
             nav.innerHTML = `
-                <span style="color: white; margin-right: 20px; font-weight: 500;">${greeting}</span>
-                <button class="btn btn-outline" id="logoutBtn" style="color: white; border-color: white;">Logout</button>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <span style="color: white; font-weight: 500;">${greeting}</span>
+                    <a href="about.html" class="btn btn-outline" style="color: white; border-color: white; text-decoration: none;">About</a>
+                    <button class="btn btn-outline" id="logoutBtn" style="color: white; border-color: white;">Logout</button>
+                </div>
             `;
             document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
         } else {
             nav.innerHTML = `
-                <button class="btn btn-primary" id="loginBtn">Login</button>
-                <button class="btn btn-secondary" id="signupBtn">Sign Up</button>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <a href="about.html" class="btn btn-outline" style="color: white; border-color: white; text-decoration: none;">About</a>
+                    <button class="btn btn-primary" id="loginBtn">Login</button>
+                    <button class="btn btn-secondary" id="signupBtn">Sign Up</button>
+                </div>
             `;
             document.getElementById('loginBtn').addEventListener('click', () => this.showAuth('login'));
             document.getElementById('signupBtn').addEventListener('click', () => this.showAuth('signup'));
@@ -470,4 +476,3 @@ document.addEventListener('DOMContentLoaded', () => {
         window.zenHabitApp = new ZenHabitApp();
     }, 100);
 });
-
