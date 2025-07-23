@@ -242,7 +242,7 @@ class AuthManager {
     }
 
     // Delete account
-    deleteAccount(password) {
+    deleteAccount(password = null) {
         if (!this.isLoggedIn()) {
             throw new Error('You must be logged in to delete your account');
         }
@@ -252,16 +252,29 @@ class AuthManager {
             throw new Error('User not found');
         }
 
-        if (user.password !== this.hashPassword(password)) {
+        // If password is provided, verify it
+        if (password && user.password !== this.hashPassword(password)) {
             throw new Error('Password is incorrect');
         }
 
+        // Store email for potential cleanup
+        const userEmail = this.currentUser.email;
+        const userId = this.currentUser.id;
+
         // Delete user data
-        delete this.users[this.currentUser.email];
+        delete this.users[userEmail];
         this.saveUsers();
 
-        // Clear progress data
+        // Clear all user-related data
         localStorage.removeItem('zenHabitProgress');
+        localStorage.removeItem(`zenHabitProfilePic_${userId}`);
+        
+        // Clear any other user-specific data
+        Object.keys(localStorage).forEach(key => {
+            if (key.includes(userId) || key.includes(userEmail)) {
+                localStorage.removeItem(key);
+            }
+        });
 
         // Logout
         this.logout();
@@ -378,4 +391,3 @@ class AuthManager {
 
 // Initialize global auth manager
 const authManager = new AuthManager();
-

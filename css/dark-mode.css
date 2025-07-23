@@ -1,0 +1,365 @@
+/* Dark Mode Styles */
+:root {
+    /* Light mode colors (default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --text-primary: #333333;
+    --text-secondary: #6c757d;
+    --text-tertiary: #495057;
+    --border-color: #dee2e6;
+    --border-light: #e9ecef;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --shadow-heavy: rgba(0, 0, 0, 0.3);
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --overlay-light: rgba(255, 255, 255, 0.2);
+    --overlay-medium: rgba(255, 255, 255, 0.3);
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #404040;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-tertiary: #d0d0d0;
+    --border-color: #404040;
+    --border-light: #2d2d2d;
+    --shadow-light: rgba(0, 0, 0, 0.3);
+    --shadow-medium: rgba(0, 0, 0, 0.5);
+    --shadow-heavy: rgba(0, 0, 0, 0.7);
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --overlay-light: rgba(0, 0, 0, 0.2);
+    --overlay-medium: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply dark mode to body and main elements */
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    color: var(--text-primary);
+}
+
+/* Account Dropdown Dark Mode */
+[data-theme="dark"] .account-dropdown {
+    background: var(--bg-primary);
+    border-color: var(--border-color);
+    box-shadow: 0 20px 40px var(--shadow-heavy);
+}
+
+[data-theme="dark"] .dropdown-tabs {
+    background: var(--bg-secondary);
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .tab-btn {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tab-btn:hover {
+    color: var(--text-tertiary);
+    background: rgba(102, 126, 234, 0.1);
+}
+
+[data-theme="dark"] .tab-btn.active {
+    color: #667eea;
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .tab-content {
+    background: var(--bg-primary);
+}
+
+/* Profile Section Dark Mode */
+[data-theme="dark"] .name-section label {
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .name-input-group input {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .name-input-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+[data-theme="dark"] .upload-hint {
+    color: var(--text-secondary);
+}
+
+/* Display Section Dark Mode */
+[data-theme="dark"] .setting-item {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .setting-info h4 {
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .setting-info p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .toggle-label {
+    background: var(--bg-tertiary);
+}
+
+/* Settings Section Dark Mode */
+[data-theme="dark"] .user-info-section h4 {
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .email-display label {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .masked-email {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .danger-zone {
+    border-top-color: var(--border-color);
+}
+
+/* Modal Dark Mode */
+[data-theme="dark"] .modal {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .modal-header h3 {
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .modal-body p {
+    color: var(--text-secondary);
+}
+
+/* Main App Dark Mode */
+[data-theme="dark"] .container {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .welcome-section {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .hero h2 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .hero p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .features-grid {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .feature-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .feature-card h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .feature-card p {
+    color: var(--text-secondary);
+}
+
+/* Dashboard Dark Mode */
+[data-theme="dark"] .dashboard-header h2 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .dashboard-header p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .challenge-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .challenge-card h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .challenge-card p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .challenge-category {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .stats-grid {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .stat-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .stat-card h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .stat-card p {
+    color: var(--text-secondary);
+}
+
+/* Auth Forms Dark Mode */
+[data-theme="dark"] .auth-form {
+    background: var(--bg-primary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .auth-form h2 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .auth-form p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .form-group label {
+    color: var(--text-tertiary);
+}
+
+[data-theme="dark"] .form-group input {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+[data-theme="dark"] .form-group input::placeholder {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .password-strength {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .auth-links a {
+    color: #667eea;
+}
+
+[data-theme="dark"] .auth-links a:hover {
+    color: #5a6fd8;
+}
+
+/* Footer Dark Mode */
+[data-theme="dark"] .footer {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer-link {
+    color: #667eea;
+}
+
+[data-theme="dark"] .footer-link:hover {
+    color: #5a6fd8;
+}
+
+/* Progress Section Dark Mode */
+[data-theme="dark"] .progress-header h2 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .progress-stats {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .progress-card {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .progress-card h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .progress-card p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .recent-challenges {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .recent-challenge-item {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .recent-challenge-item h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .recent-challenge-item p {
+    color: var(--text-secondary);
+}
+
+/* Smooth transitions for theme switching */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Preserve gradient backgrounds and specific colors */
+[data-theme="dark"] .btn-primary,
+[data-theme="dark"] .dropdown-header,
+[data-theme="dark"] .profile-picture,
+[data-theme="dark"] .user-avatar {
+    background: var(--gradient-primary) !important;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Ensure proper contrast for interactive elements */
+[data-theme="dark"] .btn-outline {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+    background: var(--bg-secondary);
+    border-color: #667eea;
+    color: #667eea;
+}
+
+[data-theme="dark"] .btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background: var(--bg-tertiary);
+    transform: translateY(-2px);
+}
+

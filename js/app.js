@@ -63,14 +63,31 @@ class ZenHabitApp {
         
         if (authManager.isLoggedIn()) {
             const greeting = this.getTimeBasedGreeting();
+            const user = authManager.getCurrentUser();
+            const avatarText = user ? user.name.charAt(0).toUpperCase() : 'U';
+            
             nav.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 16px;">
                     <span style="color: white; font-weight: 500;">${greeting}</span>
                     <a href="about.html" class="btn btn-outline" style="color: white; border-color: white; text-decoration: none;">About</a>
-                    <button class="btn btn-outline" id="logoutBtn" style="color: white; border-color: white;">Logout</button>
+                    <div class="account-icon" id="accountIcon">
+                        <span>${avatarText}</span>
+                        <img style="display: none;" alt="Profile">
+                    </div>
                 </div>
             `;
-            document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
+            
+            // Setup account icon click handler
+            document.getElementById('accountIcon').addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (window.accountDropdown) {
+                    window.accountDropdown.toggle();
+                    e.target.closest('.account-icon').classList.toggle('active');
+                }
+            });
+            
+            // Update account icon with profile picture if available
+            this.updateAccountIconWithProfilePicture();
         } else {
             nav.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 12px;">
@@ -467,12 +484,43 @@ class ZenHabitApp {
         const messages = document.querySelectorAll('.error-message, .success-message');
         messages.forEach(msg => msg.remove());
     }
+
+    updateAccountIconWithProfilePicture() {
+        const user = authManager.getCurrentUser();
+        if (!user) return;
+
+        const accountIcon = document.getElementById('accountIcon');
+        if (!accountIcon) return;
+
+        // Load profile picture from localStorage
+        const profilePicture = localStorage.getItem(`zenHabitProfilePic_${user.id}`);
+        const avatarText = accountIcon.querySelector('span');
+        const avatarImg = accountIcon.querySelector('img');
+
+        if (profilePicture && avatarImg) {
+            avatarImg.src = profilePicture;
+            avatarImg.style.display = 'block';
+            if (avatarText) avatarText.style.display = 'none';
+        } else {
+            if (avatarImg) avatarImg.style.display = 'none';
+            if (avatarText) {
+                avatarText.style.display = 'flex';
+                avatarText.textContent = user.name.charAt(0).toUpperCase();
+            }
+        }
+
+        // Update account dropdown if it exists
+        if (window.accountDropdown) {
+            window.accountDropdown.updateAccountIcon(user.name, profilePicture);
+        }
+    }
 }
 
 // Initialize app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Wait for challenges to load
     setTimeout(() => {
-        window.zenHabitApp = new ZenHabitApp();
+        window.app = new ZenHabitApp();
+        window.zenHabitApp = window.app; // Keep backward compatibility
     }, 100);
 });
