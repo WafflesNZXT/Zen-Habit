@@ -38,8 +38,13 @@
 }
 
 .avatar-emoji {
-    font-size: 48px;
+    font-size: 50px;
     filter: brightness(1.2);
+}
+
+.aboutlogo {
+    width: 150px;
+    border-radius: 50%;
 }
 
 .creator-name {
@@ -287,7 +292,7 @@
 .gratitude-card p {
     font-size: 16px;
     line-height: 1.7;
-    color: #4b5563;
+    color: #1a1c20;
     margin-bottom: 16px;
 }
 

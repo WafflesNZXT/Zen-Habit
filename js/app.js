@@ -66,8 +66,8 @@ class ZenHabitApp {
             nav.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 16px;">
                     <span style="color: white; font-weight: 500;">${greeting}</span>
-                    <a href="about.html" class="btn btn-outline" style="color: white; border-color: white; text-decoration: none;">About</a>
-                    <button class="btn btn-outline" id="logoutBtn" style="color: white; border-color: white;">Logout</button>
+                    <a href="about.html" class="btn btn-outline" style="color: white; border-color: white; text-decoration: none; height: 50px; text-align: center;">About</a>
+                    <button class="btn btn-outline" id="logoutBtn" style="color: white; border-color: white; height: 50px;">Logout</button>
                 </div>
             `;
             document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
