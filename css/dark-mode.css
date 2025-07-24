@@ -38,7 +38,38 @@
 /* Apply dark mode to body and main elements */
 [data-theme="dark"] body {
     background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    color: var(--text-primary) !important;
+}
+
+/* Override all hardcoded text colors */
+[data-theme="dark"] * {
+    color: inherit;
+}
+
+/* Specific overrides for main content areas */
+[data-theme="dark"] .container {
     color: var(--text-primary);
+}
+
+[data-theme="dark"] h1, 
+[data-theme="dark"] h2, 
+[data-theme="dark"] h3, 
+[data-theme="dark"] h4, 
+[data-theme="dark"] h5, 
+[data-theme="dark"] h6 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] p {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] span {
+    color: inherit;
+}
+
+[data-theme="dark"] label {
+    color: var(--text-tertiary) !important;
 }
 
 /* Account Dropdown Dark Mode */
@@ -150,12 +181,38 @@
     color: var(--text-primary);
 }
 
+[data-theme="dark"] .welcome-section h2 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .welcome-section p {
+    color: var(--text-secondary) !important;
+}
+
 [data-theme="dark"] .hero h2 {
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 
 [data-theme="dark"] .hero p {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
+}
+
+/* Header Dark Mode */
+[data-theme="dark"] .header {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .logo {
+    color: white !important;
+}
+
+/* Navigation text colors */
+[data-theme="dark"] .nav {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .nav span {
+    color: white !important;
 }
 
 [data-theme="dark"] .features-grid {
@@ -177,12 +234,47 @@
 }
 
 /* Dashboard Dark Mode */
+[data-theme="dark"] .dashboard-section {
+    background: var(--bg-primary);
+    color: var(--text-primary) !important;
+    border-color: var(--border-color);
+}
+
 [data-theme="dark"] .dashboard-header h2 {
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 
 [data-theme="dark"] .dashboard-header p {
-    color: var(--text-secondary);
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .user-welcome h2 {
+    color: var(--text-primary) !important;
+    /* Preserve gradient text effect */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"] .stat-number {
+    /* Preserve gradient text effect */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="dark"] .stat-label {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .challenge-header h3 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .challenge-date {
+    color: var(--text-secondary) !important;
 }
 
 [data-theme="dark"] .challenge-card {
@@ -363,3 +455,88 @@
     transform: translateY(-2px);
 }
 
+/* Button text colors */
+[data-theme="dark"] .btn {
+    color: inherit;
+}
+
+[data-theme="dark"] .btn-primary {
+    color: white !important;
+}
+
+[data-theme="dark"] .btn-secondary {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .btn-success {
+    color: white !important;
+}
+
+[data-theme="dark"] .btn-outline {
+    color: var(--text-primary) !important;
+}
+
+/* Form elements */
+[data-theme="dark"] input {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] textarea {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] select {
+    color: var(--text-primary) !important;
+}
+
+/* Challenge content text */
+[data-theme="dark"] .challenge-content {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .challenge-title {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .challenge-description {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .challenge-category {
+    color: var(--text-secondary) !important;
+}
+
+/* Status messages */
+[data-theme="dark"] .status-complete {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .status-skipped {
+    color: var(--text-primary) !important;
+}
+
+/* Links */
+[data-theme="dark"] a {
+    color: #667eea;
+}
+
+[data-theme="dark"] a:hover {
+    color: #5a6fd8;
+}
+
+/* Override any remaining hardcoded colors */
+[data-theme="dark"] .text-gray-600 {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .text-gray-700 {
+    color: var(--text-tertiary) !important;
+}
+
+[data-theme="dark"] .text-gray-800 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .text-gray-900 {
+    color: var(--text-primary) !important;
+}
