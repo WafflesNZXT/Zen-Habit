@@ -511,8 +511,35 @@
     color: var(--text-primary) !important;
 }
 
+[data-theme="dark"] .status-complete span {
+    color: var(--text-primary) !important;
+}
+
 [data-theme="dark"] .status-skipped {
     color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .status-skipped span {
+    color: var(--text-primary) !important;
+}
+
+/* Override inline styles for status messages */
+[data-theme="dark"] .status-complete span[style*="color"] {
+    color: var(--text-primary) !important;
+}
+
+/* Status icon visibility */
+[data-theme="dark"] .status-icon {
+    color: var(--text-primary) !important;
+}
+
+/* Challenge status container */
+[data-theme="dark"] #challengeStatus {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] #challengeStatus * {
+    color: inherit !important;
 }
 
 /* Links */
